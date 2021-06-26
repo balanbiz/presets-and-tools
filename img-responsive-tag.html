@@ -1,0 +1,31 @@
+<!-- without lazy loading -->
+<picture>
+    <source media="(max-width: 425px)" srcset="img/425/path.webp" type="image/webp">
+    <source media="(max-width: 768px)" srcset="img/768/path.webp" type="image/webp">
+    <source media="(max-width: 992px)" srcset="img/992/path.webp" type="image/webp">
+    <source media="(min-width: 993px)" srcset="img/1400/path.webp" type="image/webp">
+    <source media="(max-width: 425px)" srcset="img/425/path.jpg">
+    <source media="(max-width: 768px)" srcset="img/768/path.jpg">
+    <source media="(max-width: 992px)" srcset="img/992/path.jpg">
+    <source media="(min-width: 993px)" srcset="img/1400/path.jpg">
+    <img class="123" src="img/1400/path.jpg" alt="123">
+</picture>
+
+<!-- icons -->
+<picture>
+    <source srcset="path.webp" type="image/webp">
+    <img class="123" src="path.png" alt="123">
+</picture>
+
+<!-- with lazy loading -->
+<picture>
+    <source media="(max-width: 425px)" data-srcset="img/425/path.webp" srcset="img/icons/plug.webp" type="image/webp">
+    <source media="(max-width: 768px)" data-srcset="img/768/path.webp" srcset="img/icons/plug.webp" type="image/webp">
+    <source media="(max-width: 992px)" data-srcset="img/992/path.webp" srcset="img/icons/plug.webp" type="image/webp">
+    <source media="(min-width: 993px)" data-srcset="img/1400/path.webp" srcset="img/icons/plug.webp" type="image/webp">
+    <source media="(max-width: 425px)" data-srcset="img/425/path.jpg" srcset="img/icons/plug.png">
+    <source media="(max-width: 768px)" data-srcset="img/768/path.jpg" srcset="img/icons/plug.png">
+    <source media="(max-width: 992px)" data-srcset="img/992/path.jpg" srcset="img/icons/plug.png">
+    <source media="(min-width: 993px)" data-srcset="img/1400/path.jpg" srcset="img/icons/plug.png">
+    <img class="123" data-src="img/1400/path.jpg" src="img/icons/plug.png" alt="123">
+</picture>
